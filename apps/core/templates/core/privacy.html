@@ -1,0 +1,74 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Privacy Policy | {% endblock %}
+
+{% block content %}
+    <section class="hero is-medium is-light is-bold animate__animated animate__fadeIn">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title animate__animated animate__fadeIn">Privacy Policy</h1>
+                <h2 class="subtitle animate__animated animate__fadeIn">
+                    Your Privacy Matters to Us
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="section animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+        <div class="container">
+            <div class="content animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 0.6s;">Welcome to Minutos! We take your privacy seriously and want you to feel secure when using our services. Here's a clear overview of how we handle your information:</p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 0.8s;"><i class="fas fa-shield-alt"></i> Information We Collect</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 1s;">
+                    When you use Minutos, we collect the following types of information:
+                    <ul class="animate__animated animate__fadeIn">
+                        <li>Your name</li>
+                        <li>Email address</li>
+                        <li>Task details and timestamps for time tracking</li>
+                        <li>Device information, including type and operating system</li>
+                    </ul>
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 1.2s;"><i class="fas fa-cogs"></i> How We Use Your Information</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 1.4s;">
+                    We use the collected information to provide and improve the Minutos service, personalize your experience, and communicate with you. Rest assured, your time tracking data is securely stored, and we do not share it with third parties unless required by law.
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 1.6s;"><i class="fas fa-database"></i> Data Storage and Security</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 1.8s;">
+                    Your time tracking data is stored securely on our servers. We implement industry-standard security measures to protect your information from unauthorized access, disclosure, and alteration.
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 2s;"><i class="fas fa-cloud"></i> Third-Party Services</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 2.2s;">
+                    Minutos may integrate with third-party services, such as cloud storage or collaboration tools. If you choose to use these integrations, please be aware that your data may be subject to the privacy policies of those services.
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 2.4s;"><i class="fas fa-user-cog"></i> User Controls</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 2.6s;">
+                    At Minutos, we believe in giving you control. You have the right to access, correct, or delete your personal information. We provide features to help you manage your data within the app.
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 2.8s;"><i class="fas fa-exclamation-circle"></i> Changes to the Privacy Policy</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 3s;">
+                    To keep you informed, we may update this Privacy Policy to reflect changes in our data practices. Rest assured, users will be notified of any significant changes.
+                </p>
+
+                <h3 class="animate__animated animate__fadeIn" style="animation-delay: 3.2s;"><i class="fas fa-envelope"></i> Contact Information</h3>
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 3.4s;">
+                    Your questions and concerns matter to us. If you have any inquiries regarding this Privacy Policy or our data practices, please reach out to us at <a href="mailto:contact@minutos.com" class="animate__animated animate__fadeIn" style="animation-delay: 3.6s;">contact@minutos.com</a>.
+                </p>
+
+                <p class="animate__animated animate__fadeIn" style="animation-delay: 3.8s;">This Privacy Policy was last updated on <span id="last-updated-date" class="animate__animated animate__fadeIn" style="animation-delay: 4s;"></span>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set the last updated date dynamically with a slick fade-in effect
+        const lastUpdatedDate = document.getElementById("last-updated-date");
+        lastUpdatedDate.innerText = new Date().toLocaleDateString();
+        lastUpdatedDate.classList.add("animate__animated", "animate__fadeIn");
+    </script>
+{% endblock %}

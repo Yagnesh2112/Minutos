@@ -1,0 +1,128 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Plans | {% endblock %}
+
+{% block content %}
+    <section class="hero is-medium is-light is-bold animate__animated animate__fadeIn">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title animate__animated animate__fadeInDown">Plans</h1>
+                <h2 class="subtitle animate__animated animate__fadeInUp">
+                    Here are the most suitable plans according to your team's needs &#128513;
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="columns mt-6">
+        <div class="column is-3 animate__animated animate__zoomIn">
+            <div class="card zoom-on-hover">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Free</p>
+                            <p class="subtitle is-8"> ₹0 </p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li>3 projects</li>
+                            <li>1 member</li>
+                            <li>10 tasks per project</li>
+                        </ul>
+
+                        <hr>
+
+                        <a href="#" class="button is-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-3 animate__animated animate__zoomIn">
+            <div class="card zoom-on-hover">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Basic</p>
+                            <p class="subtitle is-8"> ₹99 </p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li>15 projects</li>
+                            <li>5 members</li>
+                            <li>45 tasks per project</li>
+                        </ul>
+
+                        <hr>
+
+                        <a href="#" class="button is-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-3 animate__animated animate__zoomIn">
+            <div class="card zoom-on-hover">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Pro</p>
+                            <p class="subtitle is-8"> 149 </p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li>40 projects</li>
+                            <li>8 members</li>
+                            <li>65 tasks per project</li>
+                        </ul>
+
+                        <hr>
+
+                        <a href="#" class="button is-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-3 animate__animated animate__zoomIn">
+            <div class="card zoom-on-hover">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Need more ?</p>
+                            <p class="subtitle is-8"> ? </p>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <ul>
+                            <li>Need more projects ?</li>
+                            <li>Need members ?</li>
+                            <li>Need more tasks ?</li>
+                        </ul>
+
+                        <hr>
+
+                        <a href="#" class="button is-primary">Contact Us.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .zoom-on-hover {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .zoom-on-hover:hover {
+            transform: scale(1.1);
+        }
+    </style>
+{% endblock %}

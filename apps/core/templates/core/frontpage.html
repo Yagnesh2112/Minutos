@@ -1,0 +1,66 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Home | {% endblock %}
+
+{% block content %}
+<section class="hero is-medium is-light is-bold animate__animated animate__slideInDown">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title animate__animated animate__slideInDown">Welcome to Minutos</h1>
+            <h2 class="subtitle animate__animated animate__slideInDown">Time tracking made simple</h2>
+        </div>
+    </div>
+</section>
+
+<div class="container animate__animated animate__slideInLeft" style="animation-delay: 0.2s;">
+    <div class="columns">
+        <div class="column is-8 is-offset-2">
+            <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.4s;">
+                <div class="column is-4 image">
+                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                </div>
+
+                <div class="column is-8 text">
+                    <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
+                    
+                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                </div>
+            </div>
+
+            <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.6s;">
+                <div class="column is-8 text">
+                    <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
+                    
+                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                </div>
+
+                <div class="column is-4 image">
+                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                </div>
+            </div>
+
+            <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.8s;">
+                <div class="column is-4 image">
+                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                </div>
+
+                <div class="column is-8 text">
+                    <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
+                    
+                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-align-items-center mt-6 animate__animated animate__slideInUp" style="animation-delay: 1s;">
+        <div class="column is-4 is-offset-4 has-text-centered">
+            <h2 class="subtitle animate__animated animate__slideInUp">Let's get Started</h2>
+
+            <a href="{% url 'signup' %}" class="button is-success is-large animate__animated animate__slideInUp">Get a free account</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
