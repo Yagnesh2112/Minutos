@@ -19,37 +19,37 @@
         <div class="column is-8 is-offset-2">
             <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.4s;">
                 <div class="column is-4 image">
-                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                    <img src="{% static 'images/features-tracktime.jpeg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
                 </div>
 
                 <div class="column is-8 text">
                     <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
                     
-                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                    <p class="animate__animated animate__slideInLeft">Tracking time is really easy. Select a task and just type in the number Of minutes you have worked on it and save.</p>
                 </div>
             </div>
 
             <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.6s;">
                 <div class="column is-8 text">
-                    <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
+                    <h2 class="subtitle animate__animated animate__slideInLeft">Collaborate</h2>
                     
-                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                    <p class="animate__animated animate__slideInLeft">Track time together with your colleagues. Work together on multiple projects.</p>
                 </div>
 
                 <div class="column is-4 image">
-                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                    <img src="{% static 'images/features-team.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
                 </div>
             </div>
 
             <div class="columns i-align-items my-6 animate__animated animate__slideInLeft" style="animation-delay: 0.8s;">
                 <div class="column is-4 image">
-                    <img src="{% static 'images/features-tracktime.jpg' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
+                    <img src="{% static 'images/features-happyboss.png' %}" class="animate__animated animate__slideInLeft" alt="Feature Image">
                 </div>
 
                 <div class="column is-8 text">
-                    <h2 class="subtitle animate__animated animate__slideInLeft">Simple time tracking</h2>
+                    <h2 class="subtitle animate__animated animate__slideInLeft">Make your boss happy</h2>
                     
-                    <p class="animate__animated animate__slideInLeft">Time tracking made simple. Time tracking made simple. Time tracking made simple. Time tracking made simple. </p>
+                    <p class="animate__animated animate__slideInLeft">By tracking time, you can easily show your boss what you've been working on.</p>
                 </div>
             </div>
         </div>
@@ -59,7 +59,10 @@
         <div class="column is-4 is-offset-4 has-text-centered">
             <h2 class="subtitle animate__animated animate__slideInUp">Let's get Started</h2>
 
-            <a href="{% url 'signup' %}" class="button is-success is-large animate__animated animate__slideInUp">Get a free account</a>
+            <a href="{% url 'signup' %}" class="button is-success is-large animate__animated animate__slideInUp animate__rubberBand">
+                <i class="fas fa-user-plus"></i> <!-- Font Awesome icon -->
+                <span style="margin-left: 5px;">Get a free account</span> <!-- Text with margin -->
+            </a>
         </div>
     </div>
 </div>
